@@ -5,25 +5,22 @@ const [corses1, setCorses1] = useState([])
 const [newCorses, setNewCorses] = useState("")
 
 
-
+useEffect(async() => {
+  const res  = await axios.get("http://localhost:5000/courses")
+  console.log(res.data);
+  setCorses1(res.data)
+    
+}, [])
 
     return (
-
-        <div>
-            <div> JavaSicript </div><br/>
-
-            <div> Java </div><br/>
-
-             <div>Python </div><br/>
-
-             <div>C++</div><br/>
-
-             <div>C#</div><br/>
-
-             <div>Swift</div><br/>
-
-             <div>HP</div><br/>
-
+        
+ <div>
+           
+            {corses1.map((element,index)=>{
+            return (
+              <div key={index}>
+                <h1>{corses1.name}</h1> 
         </div>
-    )
+    )})} </div>
+            )
 }

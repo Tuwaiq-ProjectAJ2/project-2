@@ -17,6 +17,11 @@ const Corses = [
   {id:8, name: "Kotlin",time:"120 day"},
 ];
 
+
+app.get("/courses",(req,res)=>{
+  res.status(200).json(Corses)
+})
+
 app.delete("/Corses1/:id", (req, res) => {
   const Corse = req.params.id;
   for (let i = 0; i <Corses.length; i++) {
