@@ -9,18 +9,41 @@ export default function Corses() {
     console.log(res.data);
     setCorses1(res.data);
   }, []);
+  
+
+  const searchCorse = (e) => {
+    setNewCorses(e.target.value);
+  };
+
+  const carshed=async()=>{
+console.log(newCorses);
+const res = await axios.get(`http://localhost:5000/serch/${newCorses}`);
+    setCorses1(res.data);
+
+
+  }
 
   return (
-    <div id="ffff">
+    <>
+    <input
+              onChange={(e) => {
+                searchCorse(e);
+              }}
+            />
+
+            <button onClick={()=>{carshed()}}>serch</button>
+    <div className="ffff">
       {corses1.map((element, index) => {
         return (
-          <div key={index}><br/>
+          <div key={index}>
+            <br />
             <h1>{element.name}</h1>
-            <img className="imgSize" src={element.imgUrl}/>
-                  <h4>{element.time}</h4>
+            <img className="imgSize" src={element.imgUrl} />
+            <h4>{element.time}</h4>
+            
           </div>
         );
       })}{" "}
     </div>
-  );
+ </> );
 }
