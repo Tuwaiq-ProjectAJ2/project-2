@@ -13,6 +13,7 @@ function App() {
       <Home />
       <Route exact path="/Corses" component={Corses} />
       <Route exact path="/Corse/:id" component={Corse} />
+
       <Route
         exact
         path="/Personal"

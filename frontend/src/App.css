@@ -66,3 +66,16 @@ ul{
   
   }
 
+/* #main{
+  
+} */
+.ffff{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+
+}
+.imgSize{
+  size: 15px;
+  border-radius: 50%;
+  
+}

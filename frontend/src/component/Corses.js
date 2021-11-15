@@ -10,6 +10,19 @@ export default function Corses() {
     console.log(res.data);
     setCorses1(res.data);
   }, []);
+  
+
+  const searchCorse = (e) => {
+    setNewCorses(e.target.value);
+  };
+
+  const carshed=async()=>{
+console.log(newCorses);
+const res = await axios.get(`http://localhost:5000/serch/${newCorses}`);
+    setCorses1(res.data);
+
+
+  }
 
   const history = useHistory()
 
@@ -18,7 +31,15 @@ export default function Corses() {
     history.push(`/Corse/${id}`)
   }
   return (
-    <div id="ffff">
+    <>
+    <input
+              onChange={(e) => {
+                searchCorse(e);
+              }}
+            />
+
+            <button onClick={()=>{carshed()}}>serch</button>
+    <div className="ffff">
       {corses1.map((element, index) => {
         return (
           <div ><br/>
@@ -31,5 +52,5 @@ export default function Corses() {
         );
       })}{" "}
     </div>
-  );
+ </> );
 }

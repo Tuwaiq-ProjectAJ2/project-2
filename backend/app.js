@@ -71,6 +71,13 @@ const Corses = [
       "https://i.pinimg.com/236x/ac/0b/71/ac0b718d995deda3e1e4ee893501324d.jpg",
     vedId: "1HakS7KsbCk",
   },
+  {
+    id: 9,
+    name: "Kotlin",
+    time: "6 months",
+    imgUrl:
+      "https://i.pinimg.com/236x/ac/0b/71/ac0b718d995deda3e1e4ee893501324d.jpg",
+  },
 ];
 
 app.get("/courses", (req, res) => {
@@ -89,6 +96,11 @@ app.get("/course/:id", (req, res) => {
   res.status(200);
   res.json(corsArr);
 });
+
+app.get("/courses", (req, res) => {
+  res.status(200).json(Corses);
+});
+
 app.delete("/Corses1/:id", (req, res) => {
   const Corse = req.params.id;
   for (let i = 0; i < Corses.length; i++) {
@@ -100,8 +112,15 @@ app.delete("/Corses1/:id", (req, res) => {
   res.status(200);
   res.json(Corses);
 });
-// app.get("/employees/salary", (req, res) => {
-//   const employee = [];
+app.get("/serch/:name", (req, res) => {
+  const searchField = req.params.name;
+  let newArry = Corses.filter((element, index) => {
+    return element.name == searchField;
+  });
+  res.status(200);
+  res.json(newArry);
+});
+
 //   for (let i = 0; i < employees.length; i++) {
 //     if (employees[i].salary >= 10000) {
 //       employee.push(employees[i]);
