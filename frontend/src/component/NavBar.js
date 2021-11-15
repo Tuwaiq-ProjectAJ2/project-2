@@ -1,35 +1,17 @@
-// import React from 'react'
-// import { Link } from "react-router-dom";
 
-// export default function NavBar () {
-//     return (
-//       <div>
-//         <ul>
-//           <li>
-//             <Link to="/">home</Link>
-//           </li>
-//           <li>
-//             <Link to="/about">about</Link>
-//           </li>
-//           <li>
-//             <Link to="/Corses">Corses</Link>
-//           </li>
-//           <li>
-//             <Link to="/Personal">Personal</Link>
-//           </li>
-//         </ul>
-//       </div>
-//     );
-// }
 import React from "react";
 import { Link } from "react-router-dom";
 
 export default function NavBar() {
   return (
     <div>
-     <div>
-        <input type="text" /><br />
-        <input type="text" /><br />
+      <img id="gg"  src= "https://i.pinimg.com/564x/8f/41/ad/8f41ad56459239d6f7c76d13f5962e2e.jpg "/>
+     <div className="btn">
+       <input type="text" placeholder ="UserName"/>
+        <br />
+        <br />
+        <input type="text" placeholder="PassWord" /><br />
+        <br />
         <button>SingIn</button>
       </div>
     </div>
