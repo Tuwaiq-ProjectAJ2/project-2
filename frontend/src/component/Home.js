@@ -7,14 +7,18 @@ export default function Home() {
       
       <div >
         <ul>
+        <li>
+          <Link to="/NavBar">SignIn</Link>
+            
+          </li>
           <li>
             <Link to="/">home</Link>
           </li>
          
-          <li>
+          {/* <li>
           <Link to="/NavBar">SignIn</Link>
             
-          </li>
+          </li> */}
           <li>
           <Link to="/Corses">Corses</Link>
             
