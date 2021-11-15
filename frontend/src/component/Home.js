@@ -5,20 +5,22 @@ export default function Home() {
     
     (
       
-      <div>
+      <div >
         <ul>
           <li>
             <Link to="/">home</Link>
           </li>
          
           <li>
-            <Link to="/Corses">Corses</Link>
+          <Link to="/NavBar">SignIn</Link>
+            
           </li>
           <li>
-            <Link to="/Personal">Personal</Link>
+          <Link to="/Corses">Corses</Link>
+            
           </li>
           <li>
-            <Link to="/NavBar">NavBar</Link>
+          <Link to="/Personal">Personal</Link>
           </li>
           <li>
             <Link to="/about">About</Link>
