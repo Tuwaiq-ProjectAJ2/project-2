@@ -28,7 +28,6 @@ function App() {
           return <About myName="name" arr={[1, 2, 3]} />;
         }}
       />
-
       <Route
         exact
         path="/NavBar"
