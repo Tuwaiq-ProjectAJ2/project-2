@@ -14,15 +14,16 @@ export default function Corse() {
   }, []);
 
   return (
+    corseList.length ?
     <div>
-      {/* {corses1.map((element, index) => 
-      <video src="{}"></video> */}
+      
+      
       {}
       <iframe
         width="420"
         height="315"
         src={`https://www.youtube.com/embed/${corseList[0].vedId}`}
       ></iframe>
-    </div>
+    </div>:""
   );
 }
