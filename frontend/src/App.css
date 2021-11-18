@@ -1,81 +1,155 @@
-ul{
-  /* box-sizing: border-box 70px;
-  padding: 0;
-  margin: 0;
-  background-color: mediumpurple; */
-  
-    display: flex;
-    justify-content: space-between;
-    font-family: cursive, wh;
-    font-size: x-large;
-  
-    align-items: center;
-    height: 10vh;
-    background-color: rgb(189, 132, 245);
-    color: white;
-    padding: 0 10rem;
-    position: relative;
-  
+ul {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: x-large;
 
+  align-items: center;
+  height: 10vh;
+  background-color: rgba(161, 159, 159, 0.11);
+  color: white;
+  padding: 0 10rem;
+  position: relative;
+  margin-top: 0;
 }
 
-
-
- li {
-    display: inline-block; 
-    margin-left: 200px;
+li {
+  display: inline-block;
+  /* margin-left: 200px;
     font-family: "montserrst",sans-serif;
     font-weight: 500;
     font-size: 20px;
-    color: white;
+  
     text-decoration: none;
-    align-items: center;
-  } 
+    align-items: center; */
+}
+/* .spin{
+  width: 200px;
+  height: 300; */
+/* } */
+#gg {
+  border-radius: 50%;
+}
+#type {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+  color: black;
+}
 
+body {
+  background-image: url("https://www.ra2ed.com/big/2OFF%20s.jpg");
 
-  
-
-  
-  body{
-    background-color: white;
-    font-family: cursive;
+  font-size: medium;
+  font-family: sans-serif;
   text-align: center;
-  
-  }  
+}
 
-  /* #ffff{ */
-/*     
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background: rgba(0, 0, 0,5);
-    border-radius: 15px;
-    box-sizing: border-box;
-  } */
- 
-  
-  input{
-    width: 200px;
-    height: 27px;
-    outline: none;
-    
-  
-  }
+#ffff {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 5);
+  border-radius: 15px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 5px rgb(44, 55, 73);
+}
+
+input {
+  width: 200px;
+  height: 27px;
+  outline: none;
+}
 
 /* #main{
   
 } */
-.ffff{
+.ffff {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
-
+  grid-template-columns: 1fr 1fr 1fr;
 }
-.imgSize{
+.imgSize {
   size: 15px;
   border-radius: 50%;
-  
+  transition: box-shadow 0.3s;
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  border-radius: 10px;
+}
+.imgSize:hover {
+  box-shadow: 5px 5px 5px rgb(44, 55, 73);
+}
+#main {
+  border: 50px;
+  width: px;
+  height: px;
+  border-radius: 50%;
+}
+.maincart {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cart {
+  width: 35%;
+  height: 200px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgba(161, 159, 159, 0.11);
+  border-radius: 7cm;
+}
+/* #pers {
+  width: 150px;
+  height: 150px;
+  margin-right: 800px;
+  border-radius: 50px;
+} */
+#meinfor {
+  height: 80vh;
+  width: 45%;
+  transition: box-shadow 0.3s;
+  font-family: sans-serif;
+  box-shadow: 5px 5px 5px rgb(44, 55, 73);
+  /* margin-right: 1200px; */
+}
+#accont {
+  margin-right: 70px;
+  margin-top: 1px;
+}
+
+#mainDiv-p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#mainDiv-p div {
+  width: 45%;
+}
+
+#about {
+  margin-left: 000px;
+}
+.btn {
+  margin: 0;
+  padding: 70px 30px;
+}
+#amjad {
+  height: 80vh;
+  width: 45%;
+  transition: box-shadow 0.3s;
+  font-family: sans-serif;
+  box-shadow: 5px 5px 5px rgb(44, 55, 73);
+  /* margin-left: 1200px; */
+}
+#pers1 , #pers {
+  width: 150px;
+  height: 150px;
+  border-radius: 50px;
+}
+#root{
+border-radius: 20%;
 }
